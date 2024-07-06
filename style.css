@@ -143,16 +143,18 @@ button {
     margin-top: 40px;
     height: 400px;
     background-color: #E5E7EB;
+    display: flex;
+    flex-wrap: wrap;
 }
 .quote {
+    height: 100px;
     font-style: italic;
     font-size: 36px;
-     margin-left: 600px;
-    margin-right: 600px;
-    padding-top: 100px;
     color: #1F2937;
+    padding-left: 500px;
+    padding-right: 500px;
 }
-.author p {
+.author {
     text-align: center;
     padding-left: 550px;
     font-size: 22px;
