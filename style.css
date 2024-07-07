@@ -1,6 +1,12 @@
 * {
-    padding: 0%;
-    margin: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
 }
 /**Header**/
 /**Head Section**/
@@ -8,27 +14,29 @@
     height: 30px;
     background-color: #1F2937;
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 25px;
+    justify-content: space-around; 
+    align-items: center;
     
 }
 .head-logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 15px;
-    padding-top: 10px;
+    
 }
 
-.head-links a {
+.head-links {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     font-weight: 500;
-    display: inline-block;
-    justify-content: space-evenly; 
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /**Hero Section**/
@@ -36,21 +44,21 @@
     height: 400px;
     background-color: #1F2937;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 5rem; 
 }
 .hero-text h1 {
     color: #F9FAF8;
-    font-size: 48px;
-    font-weight: bolder;
+    font-size: 3rem;
+    font-weight: 900;
 }
 .hero-text p {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .hero-text {
-    width: 400px;
-    margin-left: 600px;
+    width: 30rem;
 }
 button { 
     color: white;
@@ -59,39 +67,46 @@ button {
     height: 40px;
     font-weight: 500;
     border-radius: 10px;
-    margin-top: 10px
+    margin-top: 1rem;
 }
-.hero-img {
+.hero-img img{
     width: 200px;
     height: 200px;
-    background-image: url("cat_img.jpg");
-    background-size: cover;
-    margin-right: 600px;
 }
 /**Information Section**/
 .info {
-    height: max-content;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
 }
 .info-head h3 {
     color: #1F2937;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 36px;
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+    font-size: 2rem;
     font-weight: 750;
 }
-.info-body {
+.box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    
+    gap: 2rem;
+    /* flex-direction: row; */
+}
+.text {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
+    /* flex-direction: row; */
 }
 .box1 {
     height: 100px;
     width: 100px;
     border: 4px solid #3882f6;
-    border-radius: 10px;
-    margin-left: 700px; 
+    border-radius: 10px; 
     animation: rollOut 2s ease-in-out forwards 1s;
 }
 .box2 {
@@ -112,53 +127,66 @@ button {
     height: 100px;
     width: 100px;
     border: 4px solid #3882f6;
-    border-radius: 10px; 
-    margin-right: 700px;
+    border-radius: 10px;
     animation: rollOut 2s ease-in-out forwards 1.75s;
 }
 .text1 {
     height: 100px;
     width: 100px;
-    margin-left: 700px;
+    font-size: 1rem;
     text-align: center;
 }
 .text2 {
     height: 100px;
     width: 100px;
+    font-size: 1rem;
     text-align: center;
 }
 .text3 {
     height: 100px;
     width: 100px;
+    font-size: 1rem;
     text-align: center;
 }
 .text4 {
     height: 100px;
-    width: 100px; 
-    margin-right: 700px;
+    width: 100px;
+    font-size: 1rem;
     text-align: center;
 }
 /**Quote Section**/
 .quote-section {
-    margin-top: 40px;
-    height: 400px;
+    height: 300px;
     background-color: #E5E7EB;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-self: center;
+}
+.quote-area {
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
 }
 .quote {
-    height: 100px;
+    height: 250px;
+    width: 650px;
     font-style: italic;
-    font-size: 36px;
+    font-size: 2rem;
     color: #1F2937;
-    padding-left: 500px;
-    padding-right: 500px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-self: center;
 }
 .author {
-    text-align: center;
-    padding-left: 550px;
     font-size: 22px;
     font-weight: 700;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    align-items: center;
 }
 /**Call to action**/
 .call-to-action {
@@ -179,6 +207,7 @@ button {
     color: white;
     padding-top: 40px;
 }
+
 .call p {
     padding-left: 20px;
     
@@ -217,6 +246,7 @@ footer {
 .change-color:hover {
     background-color: blueviolet;
 }
+
 
 @keyframes rollOut {
     0% {
