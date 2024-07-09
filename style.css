@@ -78,29 +78,27 @@ button {
     height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
 }
 .info-head h3 {
     color: #1F2937;
-    text-align: center;
-    /* margin-top: 25px;
-    margin-bottom: 25px; */
     font-size: 2rem;
     font-weight: 750;
+    position: relative;
+    bottom: 1rem;
 }
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    /* flex-direction: row; */
 }
 .text {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 2rem;
-    /* flex-direction: row; */
 }
 .box1 {
     height: 100px;
@@ -158,35 +156,32 @@ button {
 .quote-section {
     height: 300px;
     background-color: #E5E7EB;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-self: center;
 }
 .quote-area {
-    height: 300px;
-    width: 700px;
+    height: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .quote {
-    height: 250px;
-    width: 650px;
+    height: 150px;
+    width: 600px;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #1F2937;
-    display: flex;
+    position: relative;
+    top:20%;
+    /* display: flex;
     /* flex-direction: column; */
-    justify-content: center;
-    align-self: center;
+    /* justify-content: center;
+    align-self: center; */
 }
 .author {
     font-size: 22px;
-    font-weight: 700;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-end;
-    align-items: center;
+    font-weight: 600;
+    position: relative;
+    left: 10%;
 }
 /**Call to action**/
 .call-to-action {
@@ -217,11 +212,6 @@ button {
 .first {
     font-size: 20px;
     font-weight: 700;
-}
-tap {
-    height: 40px;
-    padding-top: 40px;
-    
 }
 .second-button { 
     color: white;
