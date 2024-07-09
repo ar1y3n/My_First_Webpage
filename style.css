@@ -184,39 +184,35 @@ button {
     left: 10%;
 }
 /**Call to action**/
-.call-to-action {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 120px;
-    width: 60%;
-    background-color: #3882f6;
-    position: relative;
-    left: 20%;
-    /* margin-left: 500px;
-    margin-right: 500px; */
-    border-radius: 10px;
+.call-to-action-background {
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.call-to-action {
+    height: 120px;
+    width: 50%;
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 .call {
     height: 100px;
-    width: 50%;
     color: white;
-    padding-top: 40px;
-}
-
-.call p {
-    padding-left: 20px;
+    position: relative;
+    top: 20%;
 }
 .first {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 .second-button { 
     color: white;
     background-color: #3882f6;
-    width: 125px;
     height: 40px;
     font-weight: 500;
     border-radius: 10px;
